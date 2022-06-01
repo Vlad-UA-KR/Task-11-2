@@ -5,11 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="./content/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100&display=swap" rel="stylesheet">
+    <title>Nike</title>
 </head>
 
-<body>
-
+<body class="wrapper">
+    <div class="page">
+        <div class="images">
+            <div class="logo-nike"><img class="logo-nike__image" src="./content/logo.png" alt="logo-nike"></div>
+            <div class="shoes-nike"><img class="shoes-nike__image" src="./content/Nike-SB-Stefan-Janoski-Max.png"
+                    alt="nike-sb-stefan-janoski-max"></div>
+            <div class="choose-colors">
+                <a class="choose-colors__eclipse choose-colors__eclipse_gray" href="#"></a>
+                <a class="choose-colors__eclipse choose-colors__eclipse_white" href="#"></a>
+                <a class="choose-colors__eclipse choose-colors__eclipse_red" href="#"></a>
+                <a class="choose-colors__eclipse choose-colors__eclipse_blue" href="#"></a>
+            </div>
+        </div>
+        <div class="text">
+            <h3 class="text__model">Nike SB Stefan Janoski Max</h3>
+            <p class="text__type">Unisex Skateboarding Shoe</p>
+            <form class="text__form form" action=" " id="choose">
+                <div class="form__container">
+                    <div class="form__rating rating-list">
+                        <input type="radio" id="rating-5" name="rating" class="rating-list__item" value="5">
+                        <label for="rating-5" class="rating-list__label"></label>
+                        <input type="radio" id="rating-4" name="rating" class="rating-list__item" value="4">
+                        <label for="rating-4" class="rating-list__label"></label>
+                        <input type="radio" id="rating-3" name="rating" class="rating-list__item" value="3" checked>
+                        <label for="rating-3" class="rating-list__label"></label>
+                        <input type="radio" id="rating-2" name="rating" class="rating-list__item" value="2">
+                        <label for="rating-2" class="rating-list__label"></label>
+                        <input type="radio" id="rating-1" name="rating" class="rating-list__item" value="1">
+                        <label for="rating-1" class="rating-list__label"></label>
+                    </div>
+                </div>
+                <div class="form__select-list">
+                    <select class="form__select-item" name="size" id="size" form="choose">
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option hidden selected disabled>Size</option>
+                    </select>
+                    <select class="form__select-item" name="quantity" id="quantity" form="choose">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option hidden selected disabled>Qty</option>
+                    </select>
+                </div>
+                <input form="choose" class="form__button-submit" type="submit" value="Add to cart">
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>
