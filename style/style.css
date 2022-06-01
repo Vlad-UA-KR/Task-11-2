@@ -37,7 +37,7 @@
     padding: 24px 0 0 21px;
 }
 .shoes-nike__image{
-    padding: 69px 0 60px 36px;
+    padding: 69px 0 40px 36px;
 }
 .choose-colors{
     display: flex;
@@ -166,7 +166,7 @@
     cursor: pointer;
 }
 .form__select-item:hover{
-    box-shadow: 0px 0px 2px 1px gray;
+    box-shadow: 0px 0px 2px 2px gray;
 }
 .form__select-item:focus{
     outline: none;
@@ -188,6 +188,9 @@
     opacity: 0.5;
 }
 .form__button-submit:hover{
-    box-shadow: 0px 0px 2px 1px gray;
+    box-shadow: 0px 0px 2px 2px gray;
+}
+.form__button-submit:active{
+    box-shadow: 0px 0px 0px 0px;
 }
 
