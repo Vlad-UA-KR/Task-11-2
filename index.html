@@ -13,24 +13,36 @@
 </head>
 
 <body class="wrapper">
-    <div class="page">
-        <div class="images">
-            <div class="logo-nike"><img class="logo-nike__image" src="./content/logo.png" alt="logo-nike"></div>
-            <div class="shoes-nike"><img class="shoes-nike__image" src="./content/Nike-SB-Stefan-Janoski-Max.png"
-                    alt="nike-sb-stefan-janoski-max"></div>
-            <div class="choose-colors">
-                <a class="choose-colors__eclipse choose-colors__eclipse_gray" href="#"></a>
-                <a class="choose-colors__eclipse choose-colors__eclipse_white" href="#"></a>
-                <a class="choose-colors__eclipse choose-colors__eclipse_red" href="#"></a>
-                <a class="choose-colors__eclipse choose-colors__eclipse_blue" href="#"></a>
+    <form class="text__form form" method="get" action="#" id="choose">
+        <div class="page">
+            <div class="images">
+                <div class="logo-nike"><img class="logo-nike__image" src="./content/logo.png" alt="logo-nike"></div>
+                <div class="shoes-nike"><img class="shoes-nike__image" src="./content/Nike-SB-Stefan-Janoski-Max.png"
+                        alt="nike-sb-stefan-janoski-max"></div>
+                <fieldset class="choose-colors">
+                    <label class="choose-colors__label">
+                        <input class="choose-colors__input" type="radio" name="color" value="gray"><span
+                            class="choose-colors__eclipse choose-colors__eclipse_gray"></span>
+                    </label>
+                    <label class="choose-colors__label">
+                        <input class="choose-colors__input" type="radio" name="color" value="white">
+                        <span class="choose-colors__eclipse choose-colors__eclipse_white"></span>
+                    </label>
+                    <label class="choose-colors__label">
+                        <input class="choose-colors__input" type="radio" name="color" value="red">
+                        <span class="choose-colors__eclipse choose-colors__eclipse_red"></span>
+                    </label>
+                    <label class="choose-colors__label">
+                        <input class="choose-colors__input" type="radio" name="color" disabled value="blue">
+                        <span class="choose-colors__eclipse choose-colors__eclipse_blue _if-disabled"></span>
+                    </label>
+                </fieldset>
             </div>
-        </div>
-        <div class="text">
-            <h3 class="text__model">Nike SB Stefan Janoski Max</h3>
-            <p class="text__type">Unisex Skateboarding Shoe</p>
-            <form class="text__form form" method="get" action="#" id="choose">
+            <div class="text">
+                <h3 class="text__model">Nike SB Stefan Janoski Max</h3>
+                <p class="text__type">Unisex Skateboarding Shoe</p>
                 <div class="form__container">
-                    <div class="form__rating rating-list">
+                    <fieldsetdiv class="form__rating rating-list">
                         <input type="radio" id="rating-5" name="rating" class="rating-list__item" value="5">
                         <label for="rating-5" class="rating-list__label"></label>
                         <input type="radio" id="rating-4" name="rating" class="rating-list__item" value="4">
@@ -41,9 +53,9 @@
                         <label for="rating-2" class="rating-list__label"></label>
                         <input type="radio" id="rating-1" name="rating" class="rating-list__item" value="1">
                         <label for="rating-1" class="rating-list__label"></label>
-                    </div>
+                        </fieldset>
                 </div>
-                <div class="form__select-list">
+                <fieldset class="form__select-list">
                     <select class="form__select-item" name="size" id="size" form="choose">
                         <option value="41">41</option>
                         <option value="42">42</option>
@@ -60,11 +72,11 @@
                         <option value="5">5</option>
                         <option hidden selected disabled>Qty</option>
                     </select>
-                </div>
+                </fieldset>
                 <input form="choose" class="form__button-submit" type="submit" value="Add to cart">
-            </form>
+            </div>
         </div>
-    </div>
+    </form>
 </body>
 
 </html>
